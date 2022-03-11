@@ -1,0 +1,110 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif,
+  padding: 0;
+  color: #fff;
+}
+body {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    margin: 0;
+}
+ .main{
+     background-color: rgba(29, 29, 94, 0.8);
+    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+  text-align: center;
+  font-weight: 600;
+  margin: 50px 0 0 0;
+}
+#description {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+#survey-form {
+  margin: 30px 0;
+  background: rgba(42, 40, 71, 0.9);
+  padding: 40px 10px 60px 15px;
+  border-radius: 5px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: 99%;
+  grid-template-rows: repeat(9, auto);
+  grid-row-gap: 25px;
+}
+#name,
+#email,
+#number,
+#dropdown,
+#favorite-feature {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+input,
+select, textarea {
+  font-size: 0.9rem;
+  color: #575757;
+  padding: 8px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+}
+option {
+  color: #575757;
+}
+#recommend-choice, #improvement-options {
+  display: grid;
+  grid-row-gap: 7px;
+}
+#improvement em{
+    font-size: 0.8rem;
+    font-style: normal;
+}
+#comments{
+    width: 98%;
+}
+#commentaires{
+    min-width: 97%;
+  max-width: 97%;
+    min-height: 100px;
+}
+@media screen and (min-width: 600px) {
+    #survey-form {
+        width: 380px;
+        display: grid;
+        grid-template-columns: 99%;
+        grid-template-rows: repeat(9, auto);
+        grid-row-gap: 25px;
+      }
+}
+
+@media screen and (min-width: 900px) {
+    #survey-form {
+        width: 600px;
+        display: grid;
+        grid-template-columns: 99%;
+        grid-template-rows: repeat(9, auto);
+        grid-row-gap: 25px;
+      }
+}
+#submit{
+    background: #37AF65;
+    color: white;
+    cursor: pointer;
+}
+.blue:focus{
+    border: 3px solid rgba(32, 61, 116, 0.8);
+}
